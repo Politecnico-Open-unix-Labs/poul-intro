@@ -1,110 +1,137 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="keywords" content="remark,remarkjs,markdown,slideshow,presentation" />
-    <meta name="description" content="A simple, in-browser, markdown-driven slideshow tool." />
-    <title>POuL: About us.</title>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/light.css"/>
-    <link rel="stylesheet" href="css/progressjs.min.css"/>
+    <meta charset="utf-8">
+
+    <title>Politecnico Open unix Labs</title>
+
+    <meta name="description" content="POuL">
+    <meta name="author" content="Fabrizio Ferrai">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="reveal.js/css/theme/night.css" id="theme">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="reveal.js/lib/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- For syntax highlighting -->
+	<link rel="stylesheet" href="reveal.js/highlight.js/src/styles/solarized-light.css" id="highlight-theme">
   </head>
+
+  <style type="text/css">
+  .reveal pre code {
+    color: #3f3f3f;
+    background: #eee none repeat scroll 0% 0%;
+    font-size: 1.5em;
+    line-height: 1.4em;
+    border-radius: .2em;
+  }
+  </style>
+
   <body>
-    <textarea id="source">
-name: light
-layout: true
-class: center, middle, light
----
+    <div class="reveal">
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <!-- Slides are separated by newline + three dashes + newline, vertical slides identical but two dashes -->
+			<section data-markdown data-separator="^\n---\n$"
+			         data-separator-vertical="^\n--\n$">
+				<script type="text/template">
 
-#About us
-##Politecnico Open unix Labs
-####A short presentation of what is POuL
 
-```html
-https://poul.org
-```
+<img src="img/logo.svg" alt="Banner" style="width: 100%; margin-top: -1em; border: 0; box-shadow: none; background-color:transparent;">
 
-###<img src="img/poul.logo.png" alt="POuL Logo" style="height: 5em; margin-top: 2em;">
----
-layout:false
-template:light
-##What's POuL?
----
-
-name: sign
-layout: true
----
-
-name:whatspoul
-.title[
-  ##What's POuL
-]
-.text[###Formally: students association inside PoliMi]
---
-.text[###In reality: a big family of real friends]
+# [POUL.ORG](https://poul.org)
 
 ---
 
-name:mission
-.title[
-  ##Mission
-]
-.text[###Support FOSS and unix]
-.text[####Mostly Linux, but we deserve also some love for OSX, BSDs, Solaris, ...]
---
-.text[###Hack everything]
-.text[####Means living with the Hacker's Philosophy]
+# [poul.org](https://poul.org)
+<iframe src="https://poul.org" frameborder="0" width="110%" height="500px"></iframe>
 
 ---
 
-template:light
-layout:false
-##What do we do?
+# Cosa facciamo
+
+### Free and Open Source Software: corsi e conferenze
+
+<img src="img/python.jpg" alt="corsi" style="width: 100%; border: 0; box-shadow: none;">
+
 ---
 
-template: sign
-layout: true
+## Hackerspace
+
+<img src="img/events.jpg" alt="eventi" style="width: 70%; border: 0; box-shadow: none;">
+
 ---
 
-name:confs1
-.title[##Conferences]
-.center[###<img src="img/stallman.jpg" alt="win8" style="width: 100%;">]
-.text[####"Give that man a cookie!" (cit. R.M. Stallman)]
+## Projects
+
+<img src="img/3d.jpg" alt="3d" style="width: 70%; border: 0; box-shadow: none;">
+
 ---
 
+## Pizza Open unix Labs
 
-name:cc
-template: light
-layout:false
-class: center
-##Grazie per l'attenzione!
-###<img src="img/ccbysa.png" alt="" style="width: 30%;">
-####Queste slides sono licenziate Creative Commons<br> Attribution-ShareAlike 3.0 Unported
+<img src="img/pizza.jpg" alt="pizza" style="width: 70%; border: 0; box-shadow: none;">
 
-  https://www.poul.org
+---
 
-    </textarea>
-    <script src="js/progress.min.js" type="text/javascript"></script>
-    <script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
-    <script src="js/remark.min.js" type="text/javascript"></script>
-    <script type="text/javascript">
-      var hljs = remark.highlighter.engine;
-    </script>
-    <script src="js/remark.language.js" type="text/javascript"></script>
-    <script type="text/javascript">
-    $(document).ready(function() {
-      var slideshow = remark.create({
-        highlightStyle: 'monokai',
-        highlightLanguage: 'remark'
-      }) ;
-      $('.remark-slide-number').hide()
-      var progbar = progressJs(".remark-slides-area");
-      progbar.start();
-      slideshow.on('showSlide', function (slide) {
-        var total = $('.remark-slide-number').html().split(" / ")[1]
-        progbar.set(slide.getSlideNo()/total*100);
-      });
+# Come trovarci
+## Join us :)
+
+<br>
+
+### Opzione 1: edificio 9/A, piano terra
+### Opzione 2: scrivete a **info@poul.org**
+
+          </script>
+        </section>
+      </div>
+
+    </div>
+
+    <script src="reveal.js/lib/js/head.min.js"></script>
+    <script src="reveal.js/js/reveal.js"></script>
+
+    <script>
+
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      history: true,
+      center: true,
+
+      transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+      // Optional reveal.js plugins
+      dependencies: [
+        { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+        { src: 'reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+        { src: 'reveal.js/plugin/notes/notes.js', async: true }
+      ]
     });
-    </script>
+
+  </script>
+
   </body>
 </html>
