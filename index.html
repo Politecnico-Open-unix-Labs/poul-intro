@@ -115,12 +115,14 @@
     <script src="reveal.js/js/reveal.js"></script>
 
     <script>
-
+	
+	var should_loop = location.search.substring(1).includes('loop');
     // Full list of configuration options available at:
     // https://github.com/hakimel/reveal.js#configuration
     Reveal.initialize({
       controls: true,
       progress: true,
+	  loop: should_loop,
       history: true,
       center: true,
 
@@ -136,7 +138,9 @@
         { src: 'reveal.js/plugin/notes/notes.js', async: true }
       ]
     });
-
+	if( should_loop ){
+    	setInterval(function(){ Reveal.next(); }, 5000);
+	}
   </script>
 
   </body>
